@@ -1,0 +1,102 @@
+html div, html a, html ul, html li, html p, html nav {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+body .navigation {
+  background-color: #000000;
+  margin: 0;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+body .navigation .nav-elem {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+body .navigation .nav-elem a {
+  padding: 10px 30px;
+  display: block;
+  background-color: #000000;
+  font-family: sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+body .navigation .nav-elem a:hover {
+  background-color: #244744;
+  -webkit-box-shadow: #6d60a3 0px 0px 5px 2px, #fdb313 0px 0px 10px 5px;
+          box-shadow: #6d60a3 0px 0px 5px 2px, #fdb313 0px 0px 10px 5px;
+  color: #000000;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+body main {
+  width: 100%;
+}
+
+body main .content-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: block;
+}
+
+body main .about {
+  -webkit-transition: background-color 50ms;
+  transition: background-color 50ms;
+}
+
+body main .about .content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+
+body main .about .content-wrapper .container {
+  width: 100%;
+  min-height: 500px;
+}
+
+body main .about .content-wrapper .photo {
+  background: #000000 url("images/bao.jpg") center no-repeat;
+  background-size: cover;
+}
+
+body main .contact {
+  background-color: #413f3f;
+  color: #ffffff;
+  position: relative;
+}
+
+body main .contact .icon-container {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  font-size: 200px;
+  text-align: center;
+}
+
+body main .contact .icon-container a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body main .contact .icon-container a i {
+  position: relative;
+  line-height: 100vh;
+}
+/*# sourceMappingURL=styles.css.map */
